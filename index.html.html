@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pixoraq Studio | Graphic Design</title>
+<meta name="description" content="Pixoraq Studio — Creative graphic design services for brands, businesses and social media.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0b0b0f;--card:#14141a;--text:#f7f7f8;--muted:#a7a7b2;--accent:#f5b51b}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1100px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(11,11,15,.9);backdrop-filter:blur(12px);border-bottom:1px solid #25252d}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:24px;font-weight:800;letter-spacing:.5px}.logo span{color:var(--accent)}
+.links{display:flex;gap:25px;color:#ddd}.links a:hover{color:var(--accent)}
+.btn{display:inline-block;padding:13px 21px;border-radius:10px;background:var(--accent);color:#111;font-weight:800}
+.btn.dark{background:transparent;color:#fff;border:1px solid #383842}
+.hero{padding:100px 0 85px;background:radial-gradient(circle at 80% 20%,#2a2110 0,transparent 35%)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center}
+.badge{display:inline-block;border:1px solid #454044;padding:7px 12px;border-radius:30px;color:#ddd;font-size:13px;margin-bottom:20px}
+h1{font-size:clamp(45px,7vw,76px);line-height:1.02;letter-spacing:-2px}
+h1 span{color:var(--accent)}
+.hero p{color:var(--muted);font-size:18px;max-width:600px;margin:24px 0 30px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.visual{min-height:360px;border-radius:28px;background:linear-gradient(145deg,#1c1c24,#0f0f14);border:1px solid #30303a;display:grid;place-items:center;position:relative;overflow:hidden}
+.visual:before,.visual:after{content:"";position:absolute;border-radius:50%;filter:blur(2px)}
+.visual:before{width:230px;height:230px;background:#f5b51b;opacity:.18;top:-60px;right:-40px}
+.visual:after{width:170px;height:170px;background:#fff;opacity:.06;bottom:-50px;left:-30px}
+.mark{font-size:70px;font-weight:900;position:relative;z-index:1;letter-spacing:-5px}.mark i{color:var(--accent);font-style:normal}
+section{padding:80px 0}
+.section-title{text-align:center;margin-bottom:45px}.section-title h2{font-size:38px}.section-title p{color:var(--muted);margin-top:8px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--card);border:1px solid #292931;border-radius:18px;padding:26px;transition:.25s}
+.card:hover{transform:translateY(-5px);border-color:#555563}
+.icon{font-size:30px;margin-bottom:12px}.card h3{margin-bottom:8px}.card p{color:var(--muted)}
+.portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.work{height:220px;border-radius:18px;background:linear-gradient(135deg,#202028,#111116);border:1px solid #2d2d35;display:flex;align-items:flex-end;padding:20px;overflow:hidden;position:relative}
+.work:nth-child(2){background:linear-gradient(135deg,#2a2414,#151515)}
+.work:nth-child(3){background:linear-gradient(135deg,#171d25,#101114)}
+.work:nth-child(4){background:linear-gradient(135deg,#241b24,#121015)}
+.work:nth-child(5){background:linear-gradient(135deg,#252218,#111)}
+.work:nth-child(6){background:linear-gradient(135deg,#17231f,#101414)}
+.work strong{font-size:20px;position:relative;z-index:2}.work small{display:block;color:#c9c9cf}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.about h2{font-size:40px;margin-bottom:15px}.about p{color:var(--muted);margin-bottom:16px}
+.points{display:grid;gap:12px}.point{padding:15px 17px;background:var(--card);border:1px solid #292931;border-radius:12px}
+.contact{background:linear-gradient(135deg,#17140d,#101014);border:1px solid #353026;border-radius:25px;padding:55px;text-align:center}
+.contact h2{font-size:40px}.contact p{color:var(--muted);margin:10px auto 25px;max-width:650px}
+.contact-info{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:20px}.pill{border:1px solid #3b3b45;padding:10px 15px;border-radius:10px;color:#ddd}
+footer{padding:30px 0;border-top:1px solid #25252d;color:#858590;text-align:center;font-size:14px}
+@media(max-width:800px){.links{display:none}.hero-grid,.about{grid-template-columns:1fr}.grid,.portfolio{grid-template-columns:1fr 1fr}.hero{padding-top:70px}.visual{min-height:280px}}
+@media(max-width:520px){.grid,.portfolio{grid-template-columns:1fr}.contact{padding:35px 20px}section{padding:60px 0}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="container nav">
+    <a class="logo" href="#">PIX<span>ORAQ</span> STUDIO</a>
+    <div class="links"><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="badge">GRAPHIC DESIGN • CREATIVE SERVICES</div>
+      <h1>Creative Designs.<br><span>Powerful Brands.</span></h1>
+      <p>Pixoraq Studio creates clean, modern and memorable designs for businesses, creators and social media.</p>
+      <div class="actions">
+        <a class="btn" href="#contact">Get a Design</a>
+        <a class="btn dark" href="#portfolio">View Portfolio</a>
+      </div>
+    </div>
+    <div class="visual"><div class="mark">P<i>X</i></div></div>
+  </div>
+</header>
+
+<section id="services">
+  <div class="container">
+    <div class="section-title"><h2>Our Services</h2><p>Design solutions made for your brand.</p></div>
+    <div class="grid">
+      <div class="card"><div class="icon">✦</div><h3>Logo Design</h3><p>Professional logos that give your brand a strong identity.</p></div>
+      <div class="card"><div class="icon">▣</div><h3>Social Media Design</h3><p>Eye-catching posts, stories and promotional creatives.</p></div>
+      <div class="card"><div class="icon">◈</div><h3>Flyer & Poster</h3><p>Modern promotional designs for products, events and offers.</p></div>
+      <div class="card"><div class="icon">▤</div><h3>Business Cards</h3><p>Clean and professional business card designs.</p></div>
+      <div class="card"><div class="icon">▰</div><h3>Banners & Ads</h3><p>Digital and print-ready banners for your business.</p></div>
+      <div class="card"><div class="icon">▶</div><h3>Thumbnails</h3><p>Clickable YouTube and social media thumbnail designs.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <div class="container">
+    <div class="section-title"><h2>Our Portfolio</h2><p>Replace these sample cards with your own best work.</p></div>
+    <div class="portfolio">
+      <div class="work"><div><strong>Brand Identity</strong><small>Logo & branding</small></div></div>
+      <div class="work"><div><strong>Social Campaign</strong><small>Social media design</small></div></div>
+      <div class="work"><div><strong>Food Promotion</strong><small>Flyer design</small></div></div>
+      <div class="work"><div><strong>Business Creative</strong><small>Corporate design</small></div></div>
+      <div class="work"><div><strong>Product Ad</strong><small>Advertising design</small></div></div>
+      <div class="work"><div><strong>Creator Pack</strong><small>Thumbnail design</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container about">
+    <div>
+      <div class="badge">ABOUT PIXORAQ STUDIO</div>
+      <h2>Design that helps your brand stand out.</h2>
+      <p>We focus on clean layouts, strong visual identity and designs that communicate your message clearly.</p>
+      <p>Whether you need a logo, flyer, social post or promotional creative, Pixoraq Studio is ready to bring your idea to life.</p>
+    </div>
+    <div class="points">
+      <div class="point">✓ Creative & modern concepts</div>
+      <div class="point">✓ Professional visual presentation</div>
+      <div class="point">✓ Social-media friendly designs</div>
+      <div class="point">✓ Friendly communication & revisions</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="contact">
+      <h2>Let's Create Something Great.</h2>
+      <p>Have a design project? Contact Pixoraq Studio and tell us what you need.</p>
+      <div class="actions" style="justify-content:center">
+        <a class="btn" href="https://wa.me/923352210830?text=Hi%20Pixoraq%20Studio%2C%20I%20need%20a%20design." target="_blank">WhatsApp Us</a>
+        <a class="btn dark" href="mailto:pixoraqstudio@gmail.com">Email Us</a>
+      </div>
+      <div class="contact-info">
+        <div class="pill">📱 0335 2210830</div>
+        <div class="pill">✉ pixoraqstudio@gmail.com</div>
+        <div class="pill">📸 Instagram: @pixoraq.studio</div>
+        <div class="pill">Facebook: Pixoraq Studio</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Pixoraq Studio. All rights reserved.</footer>
+</body>
+</html>
